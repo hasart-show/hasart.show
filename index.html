@@ -3,83 +3,73 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>hasart.show — Winter Showcase</title>
-  <meta name="description" content="hasart.show — the next showcase is January 31, 2027 at 1pm.">
+  <title>has:Art — art showcases for local artists</title>
+  <meta name="description" content="has:Art puts on small art showcases for local artists. Next up: January 31, 2027 at 1pm.">
   <meta name="theme-color" content="#f6f4ff">
-  <meta property="og:title" content="hasart.show — Winter Showcase">
-  <meta property="og:description" content="Saturday, January 31, 2027 · 1:00 PM">
+  <meta property="og:title" content="has:Art">
+  <meta property="og:description" content="Next showcase: Saturday, January 31, 2027 · 1:00 PM">
   <meta property="og:url" content="https://hasart.show/">
   <meta property="og:type" content="website">
   <link rel="canonical" href="https://hasart.show/">
-  <link rel="icon" href="images/cover.svg" type="image/svg+xml">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&amp;family=Space+Mono:ital,wght@0,400;0,700;1,400&amp;display=swap">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
   <div class="bg-glow" aria-hidden="true"></div>
 
   <header class="site-header">
-    <a class="brand" href="#top">hasart.show</a>
+    <a class="logo" href="#top" aria-label="has:Art home">has<span class="logo-colon">:</span>Art</a>
     <nav class="site-nav" aria-label="Main">
+      <a href="#next">Next show</a>
       <a href="#about">About</a>
-      <a href="#past-events">Past events</a>
+      <a href="#past-events">Past</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
 
   <main id="top">
-    <!-- Next event -->
-    <section class="event" aria-labelledby="event-title">
-      <div class="event-cover">
-        <img src="images/cover.svg" alt="hasart.show event cover" width="800" height="800">
+    <!-- Intro -->
+    <section class="intro">
+      <h1>Art shows for the people who make&nbsp;it.</h1>
+      <p class="lede">has:Art puts on small, recurring showcases for local artists. New work, good company, free to attend.</p>
+    </section>
+
+    <!-- Featured: next event -->
+    <section id="next" class="featured" aria-labelledby="next-title">
+      <p class="eyebrow">Next showcase</p>
+      <h2 id="next-title" class="featured-title">Winter <em>Showcase</em></h2>
+      <p class="featured-meta">
+        <span>Sat, January 31, 2027</span>
+        <span class="dot" aria-hidden="true">·</span>
+        <span>1:00 PM</span>
+        <span class="dot" aria-hidden="true">·</span>
+        <span>Location TBA</span>
+      </p>
+
+      <!-- Countdown target is set by data-target (ISO 8601). Add an offset, e.g. -05:00, to pin a time zone. -->
+      <p class="countdown-status" id="countdown-status">Starts in</p>
+      <div class="countdown" id="countdown" data-target="2027-01-31T13:00:00" role="timer" aria-live="off">
+        <div class="unit"><span class="num" data-unit="days">--</span><span class="lbl">days</span></div>
+        <div class="unit"><span class="num" data-unit="hours">--</span><span class="lbl">hrs</span></div>
+        <div class="unit"><span class="num" data-unit="minutes">--</span><span class="lbl">min</span></div>
+        <div class="unit"><span class="num" data-unit="seconds">--</span><span class="lbl">sec</span></div>
       </div>
 
-      <div class="event-details">
-        <span class="pill">Next showcase</span>
-        <h1 id="event-title">Winter Showcase</h1>
-
-        <ul class="meta">
-          <li>
-            <span class="meta-icon date-icon" aria-hidden="true">
-              <span class="date-icon-month">Jan</span>
-              <span class="date-icon-day">31</span>
-            </span>
-            <span>
-              <strong>Saturday, January 31, 2027</strong>
-              <span class="muted">1:00 PM</span>
-            </span>
-          </li>
-          <li>
-            <span class="meta-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5Z"/></svg>
-            </span>
-            <span>
-              <strong>Location TBA</strong>
-              <span class="muted">Details shared closer to the date</span>
-            </span>
-          </li>
-        </ul>
-
-        <!-- Countdown target is set by data-target (ISO 8601). Add an offset, e.g. -05:00, to pin a time zone. -->
-        <div class="card countdown-card">
-          <p class="card-label" id="countdown-status">Starts in</p>
-          <div class="countdown" id="countdown" data-target="2027-01-31T13:00:00" role="timer" aria-live="off">
-            <div class="unit"><span class="num" data-unit="days">--</span><span class="lbl">days</span></div>
-            <div class="unit"><span class="num" data-unit="hours">--</span><span class="lbl">hrs</span></div>
-            <div class="unit"><span class="num" data-unit="minutes">--</span><span class="lbl">min</span></div>
-            <div class="unit"><span class="num" data-unit="seconds">--</span><span class="lbl">sec</span></div>
-          </div>
-          <a class="btn btn-primary" href="#contact">Get updates</a>
-          <a class="btn btn-ghost" href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=hasart.show%20Winter%20Showcase&amp;dates=20270131T130000/20270131T170000" target="_blank" rel="noopener">Add to calendar</a>
-        </div>
-      </div>
+      <p class="actions">
+        <a class="link-arrow" href="#contact">Get updates &rarr;</a>
+        <a class="link-arrow" href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=has%3AArt%20Winter%20Showcase&amp;dates=20270131T130000/20270131T170000" target="_blank" rel="noopener">Add to calendar &rarr;</a>
+      </p>
     </section>
 
     <!-- About -->
     <section id="about" class="section" aria-labelledby="about-title">
       <h2 id="about-title">About</h2>
-      <div class="card prose">
-        <p>hasart.show is a small, recurring showcase for local artists. Each one is an afternoon of new work, good company, and a chance to meet the people behind the pieces.</p>
-        <p>Free to attend. Everyone's welcome.</p>
+      <div class="prose">
+        <p>We started has:Art to give local artists a low-key place to show what they've been working on. A few times a year we find a room, hang the work, and open the doors for an afternoon.</p>
+        <p>No fees, no gatekeeping. If you make things, you're welcome to show.</p>
       </div>
     </section>
 
@@ -92,44 +82,44 @@
         ----------------
         Copy an <article class="past-event"> block for each event, newest first.
         For each photo, export two widths (e.g. 640px and 1280px) into images/gallery/
-        and list both in srcset. The browser picks the right size using `sizes`,
-        which matches the grid: 1 column on phones, 2 on tablets, 3 on desktop.
+        and list both in srcset, smallest first. The browser picks the right size using
+        `sizes`, which matches the grid: 1 column on phones, 2 on tablets, 3 on desktop.
 
         <figure class="gallery-item">
           <img src="images/gallery/EVENT-PHOTO-640.jpg"
                srcset="images/gallery/EVENT-PHOTO-640.jpg 640w,
                        images/gallery/EVENT-PHOTO-1280.jpg 1280w"
-               sizes="(max-width: 560px) 100vw, (max-width: 900px) 50vw, 340px"
+               sizes="(max-width: 560px) 100vw, (max-width: 900px) 50vw, 360px"
                width="640" height="480" loading="lazy" alt="Short description of the photo">
         </figure>
       -->
 
-      <article class="past-event card">
+      <article class="past-event">
         <header class="past-event-header">
           <h3>Fall Showcase</h3>
-          <p class="muted">October 2026</p>
+          <p>October 2026</p>
         </header>
-        <p>Our second show. Twelve artists, one long room, and a lot of coffee.</p>
+        <p class="past-event-desc">Our second show. Twelve artists, one long room, and a lot of coffee.</p>
         <div class="gallery">
-          <figure class="gallery-item"><img src="images/gallery/placeholder-640.svg" srcset="images/gallery/placeholder-640.svg 640w, images/gallery/placeholder-1280.svg 1280w" sizes="(max-width: 560px) 100vw, (max-width: 900px) 50vw, 340px" width="640" height="480" loading="lazy" alt="Photo placeholder"></figure>
-          <figure class="gallery-item"><img src="images/gallery/placeholder-640.svg" srcset="images/gallery/placeholder-640.svg 640w, images/gallery/placeholder-1280.svg 1280w" sizes="(max-width: 560px) 100vw, (max-width: 900px) 50vw, 340px" width="640" height="480" loading="lazy" alt="Photo placeholder"></figure>
-          <figure class="gallery-item"><img src="images/gallery/placeholder-640.svg" srcset="images/gallery/placeholder-640.svg 640w, images/gallery/placeholder-1280.svg 1280w" sizes="(max-width: 560px) 100vw, (max-width: 900px) 50vw, 340px" width="640" height="480" loading="lazy" alt="Photo placeholder"></figure>
-          <figure class="gallery-item"><img src="images/gallery/placeholder-640.svg" srcset="images/gallery/placeholder-640.svg 640w, images/gallery/placeholder-1280.svg 1280w" sizes="(max-width: 560px) 100vw, (max-width: 900px) 50vw, 340px" width="640" height="480" loading="lazy" alt="Photo placeholder"></figure>
-          <figure class="gallery-item"><img src="images/gallery/placeholder-640.svg" srcset="images/gallery/placeholder-640.svg 640w, images/gallery/placeholder-1280.svg 1280w" sizes="(max-width: 560px) 100vw, (max-width: 900px) 50vw, 340px" width="640" height="480" loading="lazy" alt="Photo placeholder"></figure>
-          <figure class="gallery-item"><img src="images/gallery/placeholder-640.svg" srcset="images/gallery/placeholder-640.svg 640w, images/gallery/placeholder-1280.svg 1280w" sizes="(max-width: 560px) 100vw, (max-width: 900px) 50vw, 340px" width="640" height="480" loading="lazy" alt="Photo placeholder"></figure>
+          <figure class="gallery-item"><img src="images/gallery/placeholder-640.svg" srcset="images/gallery/placeholder-640.svg 640w, images/gallery/placeholder-1280.svg 1280w" sizes="(max-width: 560px) 100vw, (max-width: 900px) 50vw, 360px" width="640" height="480" loading="lazy" alt="Photo placeholder"></figure>
+          <figure class="gallery-item"><img src="images/gallery/placeholder-640.svg" srcset="images/gallery/placeholder-640.svg 640w, images/gallery/placeholder-1280.svg 1280w" sizes="(max-width: 560px) 100vw, (max-width: 900px) 50vw, 360px" width="640" height="480" loading="lazy" alt="Photo placeholder"></figure>
+          <figure class="gallery-item"><img src="images/gallery/placeholder-640.svg" srcset="images/gallery/placeholder-640.svg 640w, images/gallery/placeholder-1280.svg 1280w" sizes="(max-width: 560px) 100vw, (max-width: 900px) 50vw, 360px" width="640" height="480" loading="lazy" alt="Photo placeholder"></figure>
+          <figure class="gallery-item"><img src="images/gallery/placeholder-640.svg" srcset="images/gallery/placeholder-640.svg 640w, images/gallery/placeholder-1280.svg 1280w" sizes="(max-width: 560px) 100vw, (max-width: 900px) 50vw, 360px" width="640" height="480" loading="lazy" alt="Photo placeholder"></figure>
+          <figure class="gallery-item"><img src="images/gallery/placeholder-640.svg" srcset="images/gallery/placeholder-640.svg 640w, images/gallery/placeholder-1280.svg 1280w" sizes="(max-width: 560px) 100vw, (max-width: 900px) 50vw, 360px" width="640" height="480" loading="lazy" alt="Photo placeholder"></figure>
+          <figure class="gallery-item"><img src="images/gallery/placeholder-640.svg" srcset="images/gallery/placeholder-640.svg 640w, images/gallery/placeholder-1280.svg 1280w" sizes="(max-width: 560px) 100vw, (max-width: 900px) 50vw, 360px" width="640" height="480" loading="lazy" alt="Photo placeholder"></figure>
         </div>
       </article>
 
-      <article class="past-event card">
+      <article class="past-event">
         <header class="past-event-header">
           <h3>Spring Showcase</h3>
-          <p class="muted">April 2026</p>
+          <p>April 2026</p>
         </header>
-        <p>Where it started. A handful of friends and their work.</p>
+        <p class="past-event-desc">Where it started. A handful of friends and their work.</p>
         <div class="gallery">
-          <figure class="gallery-item"><img src="images/gallery/placeholder-640.svg" srcset="images/gallery/placeholder-640.svg 640w, images/gallery/placeholder-1280.svg 1280w" sizes="(max-width: 560px) 100vw, (max-width: 900px) 50vw, 340px" width="640" height="480" loading="lazy" alt="Photo placeholder"></figure>
-          <figure class="gallery-item"><img src="images/gallery/placeholder-640.svg" srcset="images/gallery/placeholder-640.svg 640w, images/gallery/placeholder-1280.svg 1280w" sizes="(max-width: 560px) 100vw, (max-width: 900px) 50vw, 340px" width="640" height="480" loading="lazy" alt="Photo placeholder"></figure>
-          <figure class="gallery-item"><img src="images/gallery/placeholder-640.svg" srcset="images/gallery/placeholder-640.svg 640w, images/gallery/placeholder-1280.svg 1280w" sizes="(max-width: 560px) 100vw, (max-width: 900px) 50vw, 340px" width="640" height="480" loading="lazy" alt="Photo placeholder"></figure>
+          <figure class="gallery-item"><img src="images/gallery/placeholder-640.svg" srcset="images/gallery/placeholder-640.svg 640w, images/gallery/placeholder-1280.svg 1280w" sizes="(max-width: 560px) 100vw, (max-width: 900px) 50vw, 360px" width="640" height="480" loading="lazy" alt="Photo placeholder"></figure>
+          <figure class="gallery-item"><img src="images/gallery/placeholder-640.svg" srcset="images/gallery/placeholder-640.svg 640w, images/gallery/placeholder-1280.svg 1280w" sizes="(max-width: 560px) 100vw, (max-width: 900px) 50vw, 360px" width="640" height="480" loading="lazy" alt="Photo placeholder"></figure>
+          <figure class="gallery-item"><img src="images/gallery/placeholder-640.svg" srcset="images/gallery/placeholder-640.svg 640w, images/gallery/placeholder-1280.svg 1280w" sizes="(max-width: 560px) 100vw, (max-width: 900px) 50vw, 360px" width="640" height="480" loading="lazy" alt="Photo placeholder"></figure>
         </div>
       </article>
     </section>
@@ -137,18 +127,19 @@
     <!-- Contact -->
     <section id="contact" class="section" aria-labelledby="contact-title">
       <h2 id="contact-title">Contact</h2>
-      <div class="card contact-card">
+      <div class="prose">
         <p>Want to show your work, help out, or just ask something? Get in touch.</p>
-        <div class="contact-links">
-          <a class="btn btn-primary" href="mailto:hello@hasart.show">hello@hasart.show</a>
-          <a class="btn btn-ghost" href="https://instagram.com/" target="_blank" rel="noopener">Instagram</a>
-        </div>
+        <p class="actions">
+          <a class="link-arrow" href="mailto:hello@hasart.show">hello@hasart.show &rarr;</a>
+          <a class="link-arrow" href="https://instagram.com/" target="_blank" rel="noopener">Instagram &rarr;</a>
+        </p>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <p>&copy; <span id="year">2026</span> hasart.show</p>
+    <span class="logo logo-small">has<span class="logo-colon">:</span>Art</span>
+    <p>&copy; <span id="year">2026</span> has:Art</p>
   </footer>
 
   <dialog class="lightbox" id="lightbox" aria-label="Photo viewer">
