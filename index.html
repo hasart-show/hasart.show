@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>has:Art — art showcases for local artists</title>
+  <meta name="description" content="has:Art hosts community-focused art showcases featuring local artists. Next up: January 31, 2027 at 1pm.">
+  <meta name="theme-color" content="#f6f4ff">
+  <meta property="og:title" content="has:Art">
+  <meta property="og:description" content="Next showcase: Saturday, January 31, 2027 · 1:00 PM">
+  <meta property="og:url" content="https://hasart.show/">
+  <meta property="og:type" content="website">
+  <link rel="canonical" href="https://hasart.show/">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&amp;family=Space+Mono:ital,wght@0,400;0,700;1,400&amp;display=swap">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="bg-glow" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="logo" href="#top" aria-label="has:Art home">has<span class="logo-colon">:</span>Art</a>
+    <nav class="site-nav" aria-label="Main">
+      <a href="#next">Next show</a>
+      <a href="#about">About</a>
+      <a href="#past-events">Past</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <!-- Intro -->
+    <section class="intro">
+      <h1>Art for the community.</h1>
+      <p class="lede">has:Art hosts art showcases featuring local artists in the SF Bay Area.</p>
+    </section>
+
+    <!-- Featured: next event -->
+    <section id="next" class="featured" aria-labelledby="next-title">
+      <p class="eyebrow">Next event</p>
+      <h2 id="next-title" class="featured-title">Winter Showcase</h2>
+      <p class="featured-meta">
+        <span>Sat, January 31, 2027</span>
+        <span class="dot" aria-hidden="true">·</span>
+        <span>1:00 PM</span>
+        <span class="dot" aria-hidden="true">·</span>
+        <span>Location TBA</span>
+      </p>
+
+      <!-- Countdown target is set by data-target (ISO 8601). Add an offset, e.g. -05:00, to pin a time zone. -->
+      <p class="countdown-status" id="countdown-status">Starts in</p>
+      <div class="countdown" id="countdown" data-target="2027-01-31T13:00:00-08:00" role="timer" aria-live="off">
+        <div class="unit"><span class="num" data-unit="days">--</span><span class="lbl">days</span></div>
+        <div class="unit"><span class="num" data-unit="hours">--</span><span class="lbl">hrs</span></div>
+        <div class="unit"><span class="num" data-unit="minutes">--</span><span class="lbl">min</span></div>
+        <div class="unit"><span class="num" data-unit="seconds">--</span><span class="lbl">sec</span></div>
+      </div>
+
+      <p class="actions">
+        <a class="link-arrow" href="#contact">Get updates &rarr;</a>
+        <a class="link-arrow" href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=has%3AArt%20Winter%20Showcase&amp;dates=20270131T130000/20270131T170000" target="_blank" rel="noopener">Add to calendar &rarr;</a>
+      </p>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section" aria-labelledby="about-title">
+      <h2 id="about-title">About</h2>
+      <div class="prose">
+        <p>hasArt is an art collective based in the San Francisco Bay Area.</p>
+        <p>More coming soon.</p>
+      </div>
+    </section>
+
+    <!-- Past events -->
+    <section id="past-events" class="section" aria-labelledby="past-title">
+      <h2 id="past-title">Past events</h2>
+
+      <!--
+        Gallery template
+        ----------------
+        Copy an <article class="past-event"> block for each event, newest first.
+        For each photo, export two widths (e.g. 640px and 1280px) into images/gallery/
+        and list both in srcset, smallest first. The browser picks the right size using
+        `sizes`, which matches the grid: 1 column on phones, 2 on tablets, 3 on desktop.
+
+        <figure class="gallery-item">
+          <img src="images/gallery/EVENT-PHOTO-640.jpg"
+               srcset="images/gallery/EVENT-PHOTO-640.jpg 640w,
+                       images/gallery/EVENT-PHOTO-1280.jpg 1280w"
+               sizes="(max-width: 560px) 100vw, (max-width: 900px) 50vw, 360px"
+               width="640" height="480" loading="lazy" alt="Short description of the photo">
+        </figure>
+      -->
+
+      <article class="past-event">
+        <header class="past-event-header">
+          <h3>Fall Showcase</h3>
+          <p>October 2026</p>
+        </header>
+        <p class="past-event-desc">Our first show.</p>
+        <div class="gallery">
+          <figure class="gallery-item"><img src="images/gallery/placeholder-640.svg" srcset="images/gallery/placeholder-640.svg 640w, images/gallery/placeholder-1280.svg 1280w" sizes="(max-width: 560px) 100vw, (max-width: 900px) 50vw, 360px" width="640" height="480" loading="lazy" alt="Photo placeholder"></figure>
+          <figure class="gallery-item"><img src="images/gallery/placeholder-640.svg" srcset="images/gallery/placeholder-640.svg 640w, images/gallery/placeholder-1280.svg 1280w" sizes="(max-width: 560px) 100vw, (max-width: 900px) 50vw, 360px" width="640" height="480" loading="lazy" alt="Photo placeholder"></figure>
+          <figure class="gallery-item"><img src="images/gallery/placeholder-640.svg" srcset="images/gallery/placeholder-640.svg 640w, images/gallery/placeholder-1280.svg 1280w" sizes="(max-width: 560px) 100vw, (max-width: 900px) 50vw, 360px" width="640" height="480" loading="lazy" alt="Photo placeholder"></figure>
+          <figure class="gallery-item"><img src="images/gallery/placeholder-640.svg" srcset="images/gallery/placeholder-640.svg 640w, images/gallery/placeholder-1280.svg 1280w" sizes="(max-width: 560px) 100vw, (max-width: 900px) 50vw, 360px" width="640" height="480" loading="lazy" alt="Photo placeholder"></figure>
+          <figure class="gallery-item"><img src="images/gallery/placeholder-640.svg" srcset="images/gallery/placeholder-640.svg 640w, images/gallery/placeholder-1280.svg 1280w" sizes="(max-width: 560px) 100vw, (max-width: 900px) 50vw, 360px" width="640" height="480" loading="lazy" alt="Photo placeholder"></figure>
+          <figure class="gallery-item"><img src="images/gallery/placeholder-640.svg" srcset="images/gallery/placeholder-640.svg 640w, images/gallery/placeholder-1280.svg 1280w" sizes="(max-width: 560px) 100vw, (max-width: 900px) 50vw, 360px" width="640" height="480" loading="lazy" alt="Photo placeholder"></figure>
+        </div>
+      </article>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section" aria-labelledby="contact-title">
+      <h2 id="contact-title">Contact</h2>
+      <div class="prose">
+        <p>Want to show your work or learn more? Get in touch.</p>
+        <p class="actions">
+          <a class="link-arrow" href="mailto:hello@hasart.show">hello@hasart.show &rarr;</a>
+          <a class="link-arrow" href="https://instagram.com/hasart.show" target="_blank" rel="noopener">Instagram &rarr;</a>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span class="logo logo-small">has<span class="logo-colon">:</span>Art</span>
+    <p>&copy; <span id="year">2026</span> has:Art</p>
+  </footer>
+
+  <dialog class="lightbox" id="lightbox" aria-label="Photo viewer">
+    <button class="lightbox-close" type="button" aria-label="Close">&times;</button>
+    <img alt="">
+  </dialog>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
